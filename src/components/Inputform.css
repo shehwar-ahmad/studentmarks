@@ -1,0 +1,24 @@
+#formtitle {
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+form {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+form input,button{
+    line-height: 1.5rem;
+    padding: 1rem;
+    margin:.7rem;
+}
+
+form input {
+    width: 20rem;
+    max-width: 100%;
+    border: none;
+}
+

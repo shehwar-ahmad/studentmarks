@@ -1,9 +1,13 @@
-import './App.css';
+import "./App.css";
+import Header from "./components/Header";
+import Inputform from "./components/Inputform";
+
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello Shehwar!</h1>
+      <Header></Header>
+      <Inputform></Inputform>
     </div>
   );
 }
