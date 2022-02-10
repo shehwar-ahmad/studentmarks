@@ -1,22 +1,50 @@
-import './Inputform.css';
+import "./Inputform.css";
 
+var inpName = "",
+  inpMarks = 0;
 
-function Inputform(){
-    return (
-        <div>
+function Inputform(props) {
+  function nameHandler(event) {
+    inpName = event.target.value;
+  }
+  function marksHandler(event) {
+    inpMarks = Number(event.target.value);
+  }
+  function submitHandler(event) {
+    event.preventDefault();
 
-            <h3 id='formtitle'>Add Marks</h3>
+    const temp = {
+      name: inpName,
+      marks: inpMarks,
+    };
 
-            <form>
+    props.sendData(temp);
+  }
 
-            <input type='text' placeholder='Full Name'></input>
-            <input type='number' placeholder='Marks' min='0' max='100'></input>
+  return (
+    <div>
+      <h4 id="formtitle">Add Marks</h4>
 
-            <button type='submit'>Add</button>
+      <form>
+        <input
+          onChange={nameHandler}
+          type="text"
+          placeholder="Full Name"
+        ></input>
+        <input
+          onChange={marksHandler}
+          type="number"
+          placeholder="Marks"
+          min="0"
+          max="100"
+        ></input>
 
-            </form>
-        </div>
-    );
+        <button onClick={submitHandler} type="submit">
+          Add
+        </button>
+      </form>
+    </div>
+  );
 }
 
 export default Inputform;

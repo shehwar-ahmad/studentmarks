@@ -1,24 +1,40 @@
 #formtitle {
-    padding: 20px;
-    font-size: 1.5rem;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
 }
 
 form {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0.7rem;
+
 }
 
-form input,button{
-    line-height: 1.5rem;
-    padding: 1rem;
-    margin:.7rem;
+form input,
+button {
+  line-height: 1.5rem;
+  padding: 1rem;
+  margin: 0.7rem 0px;
+
+  border-radius: 10px;
+
 }
 
 form input {
-    width: 20rem;
-    max-width: 100%;
-    border: none;
+  width: 20rem;
+  max-width: 100%;
+  border: none;
+}
+form button{
+  width:7rem;
+  max-width: 100%;
+  border:1px solid grey;
 }
 
+form button:hover{
+  border:1px solid rgb(115, 165, 65); 
+}
