@@ -18,7 +18,7 @@ function App() {
    function getData(data){
     console.log(statedata);
     setstatedata((prevstate)=>{
-      return ([...prevstate,data])
+      return ([data,...prevstate])
     });
   }
 

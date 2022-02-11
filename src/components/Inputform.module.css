@@ -38,3 +38,7 @@ form button{
 form button:hover{
   border:1px solid rgb(115, 165, 65); 
 }
+
+input.invalid{
+  border:1px solid red;
+}
